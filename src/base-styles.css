@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*****************************   App Styling   *****************************/
+body {
+  max-width: 768px;
+  margin: auto;
+  background-color: black;
+  color : #FAF7FA;
+}
+
+html, body {
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+/* anchor/link text properties*/
+a         { text-decoration: none;      font-weight: 600; }
+a:link    { color: #FAF7FA;                             }
+a:visited { color: #FAF7FA;                             }
+a:hover   { text-decoration: underline;                   }
+a:active  { color: #FAF7FA;                             }
+
+
+/*********************************************************************************************
+
+                                  Media Query - View Port > 480px
+
+*********************************************************************************************/
+@media (min-width: 480px) {
+  .strategy-resources-inline {
+    width: unset;
+    height: unset;
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+  }  
+}
+
+@media (max-width: 479px) {
+  .formatted-hide-on-mobile {
+    display: none;
+  }
+}
